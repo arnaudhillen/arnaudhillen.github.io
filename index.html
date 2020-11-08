@@ -17,11 +17,8 @@ body {
   color: black;
 }
 
-.flex-container {
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+.flex {
+    display: flex;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -31,10 +28,7 @@ body {
 }
 
 .flex-item {
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    display: flex;
     padding: 20px;
     align-items: center;
     text-align: center;
@@ -72,8 +66,8 @@ img {
     </div>
     <div class="flex-item">
       <h1> Arnout Hillen </h1>
-      <p style="width: 50ch"> Currently studying for a master's degree in Computer Science at KUL. Specializing in Artificial Intelligence. </p>
-      <p style="width: 50ch"> Previously, bachelor's degree in Engineering at KUL (major in Computer Science and minor in Management). </p>
+      <p style="max-width: 50ch"> Currently studying for a master's degree in Computer Science at KUL. Specializing in Artificial Intelligence. </p>
+      <p style="max-width: 50ch"> Previously, bachelor's degree in Engineering at KUL (major in Computer Science and minor in Management). </p>
     </div>
     <div class="flex-item" style="flex-direction: row">
       <a href="https://facebook.com/arnouthillen/" target="_blank" class="fa fa-facebook"></a>
