@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title> Arnout Hillen </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  
-  
-html, body {
-  height: 100%;
-}
+  <title> Arnout Hillen </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
 
-body {
-  background-color: white;
-  font-family: Helvetica, Verdana;
-  color: black;
-}
+    body {
+      background-color: white;
+      font-family: Helvetica, Verdana;
+      color: black;
+    }
 
-.flex {
-    display: flex;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+    .flex-container {
+      display: flex;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
 
-.flex-item {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    min-width: 0;
-    min-height: 0;
-    flex-wrap: wrap;
-}
+    .flex-item {
+      display: flex;
+      padding: 20px;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
 
-img {
-  border-radius: 50%;
-  width: 200px;
-}
+    img {
+      border-radius: 50%;
+      width: 200px;
+    }
 
-.fa {
-  padding-left: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  color: black;
-}
+    .fa {
+      padding-left: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      color: black;
+    }
 
-.fa:hover {
-    opacity: 0.7;
-}
-  
-</style>
+    .fa:hover {
+      opacity: 0.7;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="flex-container">
+  <div class="flex-container">
     <div class="flex-item">
       <img src="images/profile.png" alt="profile picture">
     </div>
@@ -70,7 +67,7 @@ img {
       <p style="max-width: 50ch"> Currently studying for a master's degree in Computer Science at KUL. Specializing in Artificial Intelligence. </p>
       <p style="max-width: 50ch"> Previously, bachelor's degree in Engineering at KUL (major in Computer Science and minor in Management). </p>
     </div>
-    <div class="flex-item" style="flex-direction: row">
+    <div class="flex-item" style="flex-direction: row; flex-wrap: wrap">
       <a href="https://facebook.com/arnouthillen/" target="_blank" class="fa fa-facebook"></a>
       <a href="https://instagram.com/arnouthillen" target="_blank" class="fa fa-instagram"></a>
       <a href="https://twitter.com/arnouthillen/" target="_blank" class="fa fa-twitter"></a>
@@ -79,7 +76,8 @@ img {
       <a href="mailto:arnouthillen@gmail.com" class="fa fa-envelope"></a>
       <a href="#" class="fa fa-download"></a>
     </div>
-</div>
-      
+  </div>
+
 </body>
-</html> 
+
+</html>
