@@ -16,11 +16,12 @@
 
     body {
       background-color: white;
-      font-family: Helvetica;
+      font-family: Helvetica, Verdana;
       color: black;
     }
     
     img {
+      border-radius: 50%;
       max-width: 150px;
     }
 
@@ -31,6 +32,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      margin: 0px 5px;
     }
 
     .flex-item {
@@ -42,11 +44,15 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      max-width: 450px;
     }
     
-    p {
-      max-width: 60ch;
-      justify-content: left;
+    .flex-item p {
+    }
+    
+    .flex-item li {
+      margin-top: 20px;
+      text-align: left;
     }
 
     .fa {
@@ -70,8 +76,10 @@
     </div>
     <div class="flex-item">
       <h1> Arnout Hillen </h1>
-      <p> Studying for a master's degree in Computer Science at KUL. Specializing in Artificial Intelligence. </p>
-      <p> Completed a bachelor's degree in Engineering at KUL. Majored in Computer Science and took a minor in Management. </p>
+      <ul>
+      <li> Studying for a master's degree in Computer Science at KUL. Specializing in Artificial Intelligence. </li>
+      <li> Completed a bachelor's degree in Engineering at KUL. Majored in Computer Science and took a minor in Management. </li>
+    </ul>
     </div>
     <div class="flex-item" style="flex-direction: row; flex-wrap: wrap;">
       <a href="mailto:arnouthillen@gmail.com" class="fa fa-envelope"></a>
