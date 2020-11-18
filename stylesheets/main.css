@@ -1,15 +1,6 @@
 :root {
   --white: #FFFFFF;
-  --white2: #F8F9FA;
-  --white3: #F1F3F5;
-  --white4: #E9ECEE;
-  --white5: #9EA6AE;
-  --black: #262626;
-  --black2: #242B36;
-  --black3: #222529;
-  --black4: #35393F;
-  --red: #B93933;
-  --blue: #3062A5;
+  --black: #161B24;
   --border-radius: 5px;
 }
 
@@ -19,9 +10,9 @@ html, body {
 }
 
 body {
-  background-color: var(--black);
+  background-color: var(--white);
   font-family: Helvetica;
-  color: var(--white);
+  color: var(--black);
 }
 
 img {
@@ -58,7 +49,7 @@ h1 {
 
 p {
   margin: 0px 0px 20px;
-  color: var(--white2);
+  color: var(--black);
 }
 
 p:last-child {
@@ -68,8 +59,8 @@ p:last-child {
 .fa {
   padding: 0px 18px;
   font-size: 30px;
-  color: var(--white);
   text-decoration: none;
+  color: var(--black);
 }
 
 .fa:hover {
