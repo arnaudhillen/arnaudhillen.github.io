@@ -1,6 +1,10 @@
 :root {
-  --white: #F9F9F9;
-  --black: #313031;
+  --white: #F8F9FA;
+  --white2: #F1F3F5;
+  --black: #222529;
+  --black2: #35393F;
+  --red: #B93933;
+  --blue: #3062A5;
   --border-radius: 5px;
 }
 
@@ -12,7 +16,7 @@ html, body {
 body {
   background-color: var(--black);
   font-family: Helvetica;
-  color: var(--white);
+  color: var(--white2);
 }
 
 img {
@@ -58,7 +62,7 @@ p:last-child {
 .fa {
   padding: 0px 18px;
   font-size: 30px;
-  color: var(--white);
+  color: var(--white2);
   text-decoration: none;
 }
 
