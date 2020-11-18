@@ -1,5 +1,5 @@
 :root {
-  --white: #BBBBBB;
+  --white: #F9F9F9;
   --black: #313031;
   --border-radius: 5px;
 }
@@ -22,10 +22,6 @@ img {
 }
 
 h1 {
-  margin: 0px;
-}
-
-ul {
   margin: 0px;
 }
 
