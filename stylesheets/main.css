@@ -4,7 +4,7 @@
   --white3: #F1F3F5;
   --white4: #E9ECEE;
   --white5: #9EA6AE;
-  --black: #161B25;
+  --black: #242B36;
   --black2: #222529;
   --black3: #35393F;
   --red: #B93933;
@@ -20,7 +20,7 @@ html, body {
 body {
   background-color: var(--black);
   font-family: Helvetica;
-  color: var(--white2);
+  color: var(--white);
 }
 
 img {
@@ -57,7 +57,7 @@ h1 {
 
 p {
   margin: 0px 0px 20px;
-  color: var(--white4);
+  color: var(--white2);
 }
 
 p:last-child {
@@ -67,7 +67,7 @@ p:last-child {
 .fa {
   padding: 0px 18px;
   font-size: 30px;
-  color: var(--white2);
+  color: var(--white);
   text-decoration: none;
 }
 
