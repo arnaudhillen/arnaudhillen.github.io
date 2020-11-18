@@ -7,7 +7,9 @@
   <style>
     
     :root {
-      --black: rgb(32, 33, 36);
+      --black: rgb(0, 0, 0);
+      --light-black: rgb(32, 33, 36);
+      --border-radius: 8px;
     }
     
     html, body {
@@ -18,10 +20,11 @@
     body {
       background-color: white;
       font-family: Helvetica;
-      color: var(--black);
+      color: var(--light-black);
     }
     
     img {
+      border-radius: var(--border-radius);
       max-width: 150px;
     }
 
@@ -55,7 +58,7 @@
     .fa {
       padding: 0px 20px;
       font-size: 30px;
-      color: var(--black);
+      color: var(--light-black);
       text-decoration: none;
     }
     
