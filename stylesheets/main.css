@@ -1,6 +1,7 @@
 :root {
   --white: #F8F9FA;
   --white2: #F1F3F5;
+  --white3: #E9EBEE;
   --black: #222529;
   --black2: #35393F;
   --red: #B93933;
@@ -53,6 +54,7 @@ h1 {
 
 p {
   margin: 0px 0px 20px;
+  color: var(--white3);
 }
 
 p:last-child {
