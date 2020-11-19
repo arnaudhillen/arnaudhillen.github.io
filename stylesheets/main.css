@@ -1,7 +1,6 @@
 
 html, body {
   height: 100%;
-  width: 100%;
 }
 
 body {
@@ -23,18 +22,15 @@ h1 {
 .flex-container {
   display: flex;
   height: 100%;
-  width: auto;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 5px;
-  overflow: auto;
+  padding: 0px 10px;
 }
 
 .flex-item {
   flex-shrink: 0;
   display: flex;
-  height: auto;
   margin-bottom: 50px;
   flex-direction: column;
   justify-content: center;
@@ -53,13 +49,14 @@ p:last-child {
 }
 
 .fa {
-  padding: 0px 18px;
+  padding: 0px 10px;
   font-size: 30px;
   text-decoration: none;
   color: black;
+  transition: 0.2s;
 }
 
 .fa:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
    
