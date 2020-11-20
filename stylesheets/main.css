@@ -7,14 +7,14 @@ body {
   background-color: white;
   font-family: Helvetica;
   color: black;
-  animation: transitionIn 0.5s;
-  animation-fill-mode: forwards;
 }
 
 img {
   border-radius: 5px;
   max-width: 150px;
   margin-bottom: 20px;
+  animation: transitionIn 0.75s, goDown 0.75s;
+  animation-fill-mode: forwards;
 }
 
 h1 {
@@ -56,6 +56,8 @@ p:last-child {
   text-decoration: none;
   color: black;
   transition: 0.2s;
+  animation: transitionIn 0.75s, goUp 0.75s;
+  animation-fill-mode: forwards;
 }
 
 .fa:hover {
@@ -63,13 +65,17 @@ p:last-child {
 }
 
 @keyframes transitionIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px)
-  }
-  to {
-    opacity: 1;
-    transform: 
-  }
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes goUp {
+    from {transform: translateY(10px);}
+  to {transform: translateY(0px);}
+}
+
+@keyframes goDown {
+    from {transform: translateY(-10px);}
+  to {transform: translateY(0px);}
 }
 
