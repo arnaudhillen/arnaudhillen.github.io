@@ -7,7 +7,7 @@ body {
   background-color: white;
   font-family: Helvetica;
   color: black;
-  animation: transitionIn 1s;
+  animation: transitionIn 0.75s;
   animation-fill-mode: forwards;
 }
 
