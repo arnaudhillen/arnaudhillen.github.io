@@ -7,6 +7,8 @@ body {
   background-color: white;
   font-family: Helvetica;
   color: black;
+  animation: transitionIn 0.5s;
+  animation-fill-mode: forwards;
 }
 
 img {
@@ -58,5 +60,10 @@ p:last-child {
 
 .fa:hover {
   opacity: 0.5;
+}
+
+@keyframes transitionIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
    
