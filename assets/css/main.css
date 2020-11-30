@@ -12,7 +12,7 @@ body {
 }
 
 img {
-  border-radius: 8px;
+  border-radius: 16px;
   max-width: 150px;
   margin-bottom: 20px;
 }
@@ -37,7 +37,7 @@ h1 {
   flex-direction: column;
   padding: 80px 60px;
   margin: 30px;
-  border-radius: 8px;
+  border-radius: 16px;
   box-shadow: 
     rgba(25, 28, 31, 0.08) 0px 14px 32px,
     rgba(25, 28, 31, 0.04) 0px 8px 16px,
