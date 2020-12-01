@@ -1,30 +1,19 @@
-
 html, body {
   height: 100%;
-  width: 100%;
+}
+
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
-}
-
-body {
   background-color: white;
   font-family: Helvetica;
   color: black;
-  animation: transitionIn 1s;
+  animation: transitionIn 1.3s;
   animation-fill-mode: forwards;
-}
-
-img {
-  border-radius: 16px;
-  max-width: 150px;
-  margin-bottom: 20px;
-}
-
-h1 {
-  margin: 0px;
+  background-image: radial-gradient( circle farthest-corner at 1.3% 2.8%,  rgba(239,249,249,1) 0%, rgba(182,199,226,1) 100.2% );
 }
 
 .flex-box {
@@ -33,17 +22,14 @@ h1 {
   align-content: space-around;
   justify-content: center;
   flex-direction: column;
-  padding: 80px 60px;
+  padding: 50px;
   margin: 30px;
   border-radius: 16px;
   box-shadow: 
-    rgba(25, 28, 31, 0.08) 0px 14px 32px,
-    rgba(25, 28, 31, 0.04) 0px 8px 16px,
-    rgba(25, 28, 31, 0.04) 0px -1px 0px;
-}
-
-div.flex-item:last-child {
-  margin-bottom: 0px;
+    rgba(25, 28, 31, 0.16) 0px 14px 32px,
+    rgba(25, 28, 31, 0.08) 0px 8px 16px,
+    rgba(25, 28, 31, 0.08) 0px -1px 0px;
+  background: white;
 }
 
 .flex-item {
@@ -55,6 +41,20 @@ div.flex-item:last-child {
   align-items: center;
   text-align: center;
   max-width: 450px;
+}
+
+div.flex-item:last-child {
+  margin-bottom: 0px;
+}
+
+img {
+  border-radius: 16px;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0px;
 }
 
 p {
@@ -71,7 +71,7 @@ p:last-child {
   font-size: 32px;
   text-decoration: none;
   color: black;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .fa:hover {
@@ -81,7 +81,7 @@ p:last-child {
 @keyframes transitionIn {
   0%, 33% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
