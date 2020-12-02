@@ -2,6 +2,10 @@
   --speed: 1.3s;
   --bg-color: white;
   --color: black;
+  --box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  --bg-image: 
+    radial-gradient(circle farthest-corner at 1.3% 2.8%, rgba(239, 249, 249, 1) 0%, rgba(182, 199, 226, 1) 100.2%);
 }
 
 html,
@@ -21,7 +25,7 @@ body {
   color: var(--color);
   animation: transitionIn var(--speed);
   animation-fill-mode: forwards;
-  /*background-image: radial-gradient(circle farthest-corner at 1.3% 2.8%, rgba(239, 249, 249, 1) 0%, rgba(182, 199, 226, 1) 100.2%);*/
+  /*background-image: var(--bg-image);*/
   overflow-y: scroll;
 }
 
@@ -32,18 +36,14 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 50px;
-  margin: 30px;
-  border-radius: 16px;
-  box-shadow:
-    rgba(25, 28, 31, 0.16) 0px 14px 32px,
-    rgba(25, 28, 31, 0.08) 0px 8px 16px,
-    rgba(25, 28, 31, 0.08) 0px -1px 0px;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
   background: white;
+  margin: 1rem;
 }
 
 .box-img {
   padding: 0;
-  margin: 0;
 }
 
 .item {
