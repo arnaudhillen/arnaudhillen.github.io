@@ -1,3 +1,9 @@
+:root {
+  --speed: 1.3s;
+  --bg-color: white;
+  --color: black;
+}
+
 html,
 body {
   height: 100%;
@@ -10,12 +16,13 @@ body {
   flex-wrap: wrap-reverse;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: var(--bg-color);
   font-family: Helvetica;
-  color: black;
-  animation: transitionIn 1.3s;
+  color: var(--color);
+  animation: transitionIn var(--speed);
   animation-fill-mode: forwards;
   /*background-image: radial-gradient(circle farthest-corner at 1.3% 2.8%, rgba(239, 249, 249, 1) 0%, rgba(182, 199, 226, 1) 100.2%);*/
+  overflow-y: scroll;
 }
 
 .box, .box-img {
@@ -32,7 +39,6 @@ body {
     rgba(25, 28, 31, 0.08) 0px 8px 16px,
     rgba(25, 28, 31, 0.08) 0px -1px 0px;
   background: white;
-  max-width: 100%;
 }
 
 .box-img {
@@ -77,7 +83,7 @@ p:last-child {
   padding: 0px 13px;
   font-size: 32px;
   text-decoration: none;
-  color: black;
+  color: var(--color);
   transition: 0.6s;
 }
 
