@@ -1,5 +1,6 @@
 :root {
   --speed: 1.3s;
+  --delay: 800ms;
   --bg-color: white;
   --color: black;
   --box-shadow:
@@ -24,8 +25,6 @@ body {
   background-color: var(--bg-color);
   font-family: Helvetica;
   color: var(--color);
-  animation: transitionIn var(--speed);
-  animation-fill-mode: forwards;
   /*background-image: var(--bg-image);*/
   overflow-y: scroll;
 }
@@ -42,10 +41,13 @@ body {
   box-shadow: var(--box-shadow);
   background: white;
   margin: 1rem;
+  animation: transitionIn var(--speed);
+  animation-fill-mode: both;
 }
 
 .box-img {
   padding: 0;
+  animation-delay: var(--delay);
 }
 
 .item {
