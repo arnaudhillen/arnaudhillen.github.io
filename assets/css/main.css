@@ -111,7 +111,7 @@ p:last-child {
   opacity: 0.5;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 560px) {
   :root {
     --margin-bottom: 30px;
     --box-padding: 20px;
