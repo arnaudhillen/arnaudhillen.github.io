@@ -13,6 +13,7 @@
   --border-radius: 1rem;
   --margin-bottom: 50px;
   --box-padding: 50px;
+  --box-margin: 0.5rem 1rem 0;
 }
 
 html,
@@ -44,7 +45,7 @@ body {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   background: white;
-  margin: 1rem;
+  margin: var(--box-margin);
   animation: transitionIn var(--speed);
   animation-fill-mode: both;
 }
