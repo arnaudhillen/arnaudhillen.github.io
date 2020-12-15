@@ -44,7 +44,7 @@ body {
   flex-direction: column;
   padding: var(--box-padding);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow-2);
+  box-shadow: var(--box-shadow);
   background: white;
   margin: 1rem;
   animation: transitionIn var(--speed);
