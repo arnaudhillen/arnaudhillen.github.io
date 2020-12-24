@@ -1,6 +1,6 @@
 :root {
-  --speed: 1.6s;
-  --delay: 0.8s;
+  --duration: 1.6s;
+  --delay: 0.6s;
   --bg-color: white;
   --color: black;
   --box-shadow:
@@ -8,7 +8,7 @@
   --box-shadow-2:
     0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   --bg-image:
-    radial-gradient(circle farthest-corner at 1.3% 2.8%, rgba(239, 249, 249, 1) 0%, rgba(182, 199, 226, 1) 100.2%);
+    radial-gradient(circle farthest-corner at 1.3% 2.8%, rgb(255, 255, 255) 0%, rgb(226, 226, 226) 100.2%);
   --fa-hover-speed: 600ms;
   --font-size: 16px;
   --font-size-fa: 32px;
@@ -47,13 +47,18 @@ body {
   box-shadow: var(--box-shadow);
   background: white;
   margin: 1rem;
-  animation: transitionIn var(--speed);
-  animation-fill-mode: both;
+}
+
+.box {
+  animation-fill-mode: forwards;
+  animation: transitionUp var(--duration);
 }
 
 .box-img {
   padding: 0;
+  animation: transitionUp var(--duration);
   animation-delay: var(--delay);
+  animation-fill-mode: backwards;
 }
 
 .item {
@@ -134,7 +139,7 @@ p:last-child {
   
 }
 
-@keyframes transitionIn {
+@keyframes transitionUp {
 
   0%,
   33% {
@@ -144,6 +149,7 @@ p:last-child {
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
+
 }
