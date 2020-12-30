@@ -89,10 +89,6 @@ div.item:last-child {
   flex-wrap: wrap;
 }
 
-h1, p {
-  width: 100%;
-}
-
 img {
   border-radius: var(--border-radius);
   max-width: 482px;
